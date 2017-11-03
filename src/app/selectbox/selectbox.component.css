@@ -1,0 +1,108 @@
+.container-fluid {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    cursor: pointer;
+}
+
+.text {
+    display: block;
+    height: 37px;
+    line-height: 33px;
+    position: relative;
+}
+
+.text:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid gray;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+
+.container-fluid.active .text:after {
+    border-bottom: 10px solid gray;
+    border-top: 0;
+}
+
+
+.selectbox-container {
+    padding-top: 10px;
+}
+
+.options-item {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.options-item.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-custom {
+    width: 100%;
+    min-height: 40px;
+}
+
+.options-container {
+    max-height: 300px;
+    overflow: auto;
+    width: 100%;
+}
+
+.input {
+    width: 98%;
+    margin: auto;
+    height: 38px;
+}
+
+.show-up.active {
+    position: relative;
+    height: 0;
+    padding-top: 351px;
+    padding-bottom: 50px;
+    margin-top: -351px;
+}
+
+.show-up.active .selectbox-container {
+    position: relative;
+    bottom: 388px;
+    height: 347px;
+}
+
+.show-up.active .input {
+    position: relative;
+    bottom: -295px;
+}
+
+.show-up.active .options-container {
+    position: relative;
+    bottom: 48px;
+    height: 300px;
+    overflow: auto;
+}

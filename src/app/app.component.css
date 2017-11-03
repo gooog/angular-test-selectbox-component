@@ -1,0 +1,46 @@
+.main-container {
+    background: gray;
+    border: 1px solid red;
+    width: 300px;
+    margin: auto;
+}
+
+.text {
+
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    background: white;
+    backgroud: green;
+}
+
+.selectbox-container {
+    width: 100%;
+    height: 300px;
+    background: yellow;
+}
+
+.show-up {
+    position: relative;
+    height: 0;
+    padding-top: 341px;
+    padding-bottom: 25px;
+    margin-top: -341px;
+}
+
+.show-up .text {
+
+}
+
+.show-up .input {
+    position: relative;
+    top: -65px;
+}
+
+.show-up .selectbox-container {
+    height: 300px;
+    position: relative;
+    bottom: 388px;
+}

@@ -1,0 +1,9 @@
+<div class="container-fluid" [ngClass]="{'active': showOptions, 'show-up': !this.isVisible}" #selectbox id="selectbox">
+  <span class="text" (click)="showOptions = !showOptions">{{ choosenOption ? choosenOption.display : 'აირჩიეთ...' }}</span>
+  <div class="row selectbox-container" *ngIf="showOptions" (click)="$event.stopPropagation()">
+      <input type="text" class="form-control input" #selectboxInput autofocus (input)="filterOptions($event)">
+      <div class="options-container">
+        <div class="options-item" *ngFor="let option  of optionsCopy" (mousemove)="selectedOption = option" (click)="onOptionSelect(option)" [ngClass]="{'active': option === selectedOption}">{{ option.display }}</div>
+      </div>
+  </div>
+</div>
